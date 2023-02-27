@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.filho{
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+}
