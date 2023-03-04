@@ -14,7 +14,7 @@ const currentDate = new Date();
 console.log(currentDate.toLocaleDateString()) 
 const tomorrow = new Date(currentDate.setDate(currentDate.getDate() + 1));
 
-// const tomorrow = new Date('Feb 24, 2023 17:55:30')
+// const tomorrow = new Date('Mar 4, 2023 01:37:30')
 // console.log(tomorrow) 
 
 let results = document.getElementById('turn_off_results');
@@ -45,6 +45,8 @@ const clique = btnNo.addEventListener('click', () => {
             clearInterval(timer);
             localStorage.setItem('btn_add', false);
             document.getElementById("btn_no").disabled = localStorage.getItem('btn_add');
+            document.getElementById("btn_no").disabled = false;
+            clearInterval(timer);
         }
     }, 1000) 
 })
